@@ -9,7 +9,7 @@ type handleFileUpload = (file: File) => void;
 
 const storageRef = firebase.storage().ref();
 
-const updateAvatar: handleFileUpload = (file) => {
+export const updateAvatar: handleFileUpload = (file) => {
   const metadata = {
     contentType: file.type
   };
@@ -28,8 +28,4 @@ const updateAvatar: handleFileUpload = (file) => {
     .catch((err) => {
       console.log(`An error has occurd: ${err}`);
     });
-};
-
-export default {
-  updateAvatar: updateAvatar
 };
