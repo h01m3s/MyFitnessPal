@@ -13,8 +13,6 @@ const LoginPage: React.FC = () => {
     return <Redirect to="/" />;
   }
 
-  console.log(`current user from context: ${JSON.stringify(currentUser)}`);
-
   const isValidEmail = () => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   const handleCreateUser = () => {
