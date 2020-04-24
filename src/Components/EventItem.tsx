@@ -34,7 +34,10 @@ const EventItem: React.FC<Props> = ({ event }) => {
           href="#"
           className="card-header-icon"
           aria-label="more options"
-          onClick={() => setHideContent(!hideContent)}
+          onClick={(e) => {
+            e.preventDefault();
+            setHideContent(!hideContent);
+          }}
         >
           <span className="icon">
             <i className="fas fa-angle-down" aria-hidden="true"></i>
@@ -46,10 +49,10 @@ const EventItem: React.FC<Props> = ({ event }) => {
           <ol>
             {event.routine.map((routine) => {
               return (
-                <>
+                <div key={Math.random()}>
                   <li>{routine.name}</li>
                   {routine.description}
-                </>
+                </div>
               );
             })}
           </ol>
