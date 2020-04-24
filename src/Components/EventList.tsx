@@ -55,7 +55,7 @@ const sampleEvents: Event[] = [
     user: { name: 'John Appleseed' }
   },
   {
-    title: 'Casule Abs Workout',
+    title: 'Casual Abs Workout',
     routine: [
       { name: 'Sit-Up', description: '3-4 sets of 20 reps' },
       { name: 'Leg Raise', description: '3-4 sets of 8-10 reps' },
