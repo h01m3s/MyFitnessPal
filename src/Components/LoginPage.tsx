@@ -87,7 +87,7 @@ const LoginPage: React.FC = () => {
             </div>
             <div className="level-right">
               {/* TODO: Add handler */}
-              <button className="button is-text" style={{ padding: 0 }}>
+              <button className="button is-text is-paddingless">
                 Forgot Password?
               </button>
             </div>
