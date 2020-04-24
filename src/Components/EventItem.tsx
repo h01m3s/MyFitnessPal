@@ -29,7 +29,10 @@ const EventItem: React.FC<Props> = ({ event }) => {
   return (
     <div className="card" style={{ marginBottom: '12px' }}>
       <header className="card-header">
-        <p className="card-header-title">{`${event.user.name}: ${event.title}`}</p>
+        <p className="card-header-title">
+          <a href="#">{`@${event.user.name}`}</a>
+          {`: ${event.title}`}
+        </p>
         <a
           href="#"
           className="card-header-icon"

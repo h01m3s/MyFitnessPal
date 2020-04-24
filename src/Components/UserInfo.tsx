@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 
 interface Props {
@@ -25,7 +26,8 @@ const UserInfo: React.FC<Props> = ({ user }) => {
         </div>
         <div className="media-content">
           <p className="title is-4">{`${user.name.first} ${user.name.last}`}</p>
-          <p className="subtitle is-6">@{user.name.first}</p>
+          <a href="#">@{user.name.first}</a>
+          {/* <p className="subtitle is-6">@{user.name.first}</p> */}
         </div>
         <div className="media-content ">
           <button
